@@ -1,0 +1,20 @@
+.flex-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-box div{
+    margin: auto;
+    width: 50%;
+    height: 200px
+}
+
+.flex-box div p{
+    text-align: center;
+}
+
+.flex-box div img{
+    max-height: 128px;
+    display:block;
+    margin:auto;
+}
