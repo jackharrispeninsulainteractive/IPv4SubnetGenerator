@@ -17,5 +17,5 @@ Active webpage:
 This tool is under MIT license as contained in the license file in this repository.
 
 ### Credits:
-All programming by myself
-CSS Styling by Trongate Framework / David Connelly 
+- All programming by myself
+- CSS Styling by Trongate Framework / David Connelly 
