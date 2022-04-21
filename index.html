@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subnet Generator</title>
+    <link rel="stylesheet" href="./Third-Party/trongate.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main style="max-width: 1000px; margin: auto">
+
+    <section>
+        <h1 style="text-align: center">Subnet Generator</h1>
+    </section>
+
+    <section>
+        <h2>Configuration....</h2>
+        <label>
+            Starting Ip
+            <select name="ip" id="starting-ip">
+                <option value="192.168">192.168.x.x</option>
+                <option value="172.16">172.16.x.x</option>
+                <option value="10.0">10.0.x.x</option>
+            </select>
+        </label>
+
+
+        <label>
+            Subnet Length
+            <input type="text" id="subnet-length">
+        </label>
+
+        <label>
+            Quantity
+            <input type="text" id="quantity">
+        </label>
+
+    <button onclick="generateNew()" class="btn btn-primary">Generate</button>
+
+    </section>
+
+    <hr>
+    <section>
+        <h2>Outcome: </h2>
+        <table class="table table-striped" style="margin-top: 2em">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Network Address</th>
+                <th scope="col">First Host Address</th>
+                <th scope="col">Last Host Address</th>
+                <th scope="col">Broadcast Address</th>
+                <th scope="col">Usable Hosts</th>
+
+            </tr>
+            </thead>
+            <tbody id="new-output">
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>Created by Jack Harris &copy; 2022 with thanks to...</p>
+    <div class="flex-box">
+        <div>
+            <img src="./Third-Party/trongate_logo_trans_bg.png" alt="Trongate Logo">
+            <p>Trongate for the CSS styling</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="./subnetGenerator.js"></script>
+
+</body>
+</html>
